@@ -1,1 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
+/* color #2196F3 #212121 #757575 #FFFFFF  rgba(255, 255, 255, 0.6)*/
+
+body {
+  font-family: Roboto, sans-serif;
+  color: #212121;
+  font-weight: 500;
+}
+
+/* !header */
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+}
+
+.contact-nav a {
+  color: #757575;
+}
+
+.site-nav a:hover,
+.site-nav a:focus,
+.contact-nav a:focus,
+.contact-nav a:hover,
+.address-nav a:focus,
+.address-nav a:hover {
+  color: #2196f3;
+}
+
+/* !footer */
+.footer {
+  background-color: #2f303a;
+}
+
+.address-link {
+  color: #ffffff;
+  font-weight: 400;
+}
+.address-contact {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+}
