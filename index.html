@@ -7,28 +7,30 @@
 
     <title>Document</title>
 
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
+
   </head>
   <body>
     <!-- !Шапка -->
-    
-	 <header class="header">
-      
-		<nav>
-        <a class="logo" href="">WebStudio</a>
 
-        <ul class="site-nav">
+    <header class="header">
+      <nav>
+        <a class="logo" href="./index.html">Web<span class="logo-dark">Studio</span></a>
+
+        <ul class="nav-menu">
           <li><a href="./index.html">Студия</a></li>
           <li><a href="./portfolio.html">Портфолио</a></li>
           <li><a href="">Контакты</a></li>
         </ul>
       </nav>
 
-      <ul class="contact-nav">
+      <ul class="nav-contact">
         <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
         <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
@@ -39,32 +41,31 @@
 
       <section class="hero">
         <h1 class="title">Эффективные решения для вашего бизнеса</h1>
-
-        <button class="button-studio" type="button">Заказать услугу</button>
+        <button class="btn" type="button">Заказать услугу</button>
       </section>
 
       <!-- !Список качеств-->
       <section>
-        <h2>Список качеств</h2>
+        <h2 class="title-invis">Список качеств</h2>
         <ul>
           <li>
-            <h3>Внимание к деталям</h3>
+            <h3 class="title-section">Внимание к деталям</h3>
             <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
           </li>
           <li>
-            <h3>Пунктуальность</h3>
+            <h3 class="title-section">Пунктуальность</h3>
             <p>
               Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
             </p>
           </li>
           <li>
-            <h3>Планирование</h3>
+            <h3 class="title-section">Планирование</h3>
             <p>
               Равным образом консультация с широким активом в значительной степени обуславливает.
             </p>
           </li>
           <li>
-            <h3>Современные технологии</h3>
+            <h3 class="title-section">Современные технологии</h3>
             <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
           </li>
         </ul>
@@ -72,7 +73,7 @@
 
       <!-- !Список примеров -->
       <section>
-        <h2>Чем мы занимаемся</h2>
+        <h2 class="title-team">Чем мы занимаемся</h2>
         <ul>
           <li>
             <img src="./imeges/img1.jpg" alt="work computer" width="370" />
@@ -84,31 +85,31 @@
 
       <!-- !Наша команда -->
       <section>
-        <h2>Наша команда</h2>
+        <h2 class="title-team">Наша команда</h2>
 
         <ul>
           <li>
             <img src="./imeges/foto1.jpg" alt="Product Designer" width="270" />
-            <h3>Игорь Демьяненко</h3>
-            <p>Product Designer</p>
+            <h3 class="title-name">Игорь Демьяненко</h3>
+            <p lang="en" class="text-proff">Product Designer</p>
           </li>
 
           <li>
             <img src="./imeges/foto2.jpg" alt="Frontend Developer" width="270" />
-            <h3>Ольга Репина</h3>
-            <p>Frontend Developer</p>
+            <h3 class="title-name">Ольга Репина</h3>
+            <p lang="en" class="text-proff">Frontend Developer</p>
           </li>
 
           <li>
             <img src="./imeges/foto3.jpg" alt="Marketing" width="270" />
-            <h3>Николай Тарасов</h3>
-            <p>Marketing</p>
+            <h3 class="title-name">Николай Тарасов</h3>
+            <p lang="en"class="text-proff">Marketing</p>
           </li>
 
           <li>
             <img src="./imeges/foto4.jpg" alt="UI Designer" width="270" />
-            <h3>Михаил Ермаков</h3>
-            <p>UI Designer</p>
+            <h3 class="title-name">Михаил Ермаков</h3>
+            <p lang="en"class="text-proff">UI Designer</p>
           </li>
         </ul>
       </section>
@@ -116,12 +117,13 @@
 
     <!--!footer -->
     <footer class="footer">
-      <a class="logo" href="">WebStudio</a>
+      <a class="logo" href="./index.html">Web<span class="logo-light">Studio</span></a>
 
       <address>
         <ul class="address-nav">
           <li>
-            <a class ="address-link"
+            <a
+              class="address-link"
               href="https://goo.gl/maps/Zfk1go88PQ9JeGADA"
               target="_blank"
               rel="noopener noreferrer"
