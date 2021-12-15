@@ -11,41 +11,38 @@ body {
   font-family: Roboto, sans-serif;
   color: var(--main-text-color);
   background-color: var(--white-text-color);
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  text-align: left;
-  vertical-align: top;
   letter-spacing: 0.03em;
 }
 
-a {
+.link {
   text-decoration: none;
 }
 
-ul {
+.list {
   list-style: none;
 }
 
 /* !header */
-.nav-menu a,
-.nav-contact a {
+
+.nav-contact .link {
+	color: var(--main-text-color);
+ }
+
+.nav-item .link {
   color: var(--second-text-color);
   font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.02em;
 }
 
-.nav-contact a {
-  color: var(--main-text-color);
-}
-
-.nav-menu a:hover,
-.nav-menu a:focus,
-.nav-contact a:focus,
-.nav-contact a:hover,
-.address-nav a:focus,
-.address-nav a:hover {
+.nav-link.link:hover,
+.nav-link.link:focus,
+.map-link.link:hover,
+.map-link.link:focus,
+.address-link.link:hover,
+.address-link.link:focus{
   color: var(--accent-text-color);
 }
 
@@ -91,6 +88,7 @@ ul {
   letter-spacing: 0.06em;
   text-align: center;
   vertical-align: center;
+  cursor: pointer;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -102,24 +100,28 @@ ul {
   -webkit-text-stroke: 1px #000000;
 }
 /* !main index*/
-.team {
+.section-team {
   background-color: var(--background-box-lightgrey);
 }
 .title-invis {
   color: transparent;
 }
 
-.title-section,
-.title-team {
+.qualities-title {
+  color: var(--second-text-color);
+  font-size: 14px;
+  line-height: 1.17;
+  text-transform: uppercase;
+}
+.team-title, 
+.examples-title {
+  font-size: 36px;
   color: var(--second-text-color);
   line-height: 1.17;
-}
-.title-team {
-  font-size: 36px;
   text-align: center;
 }
 
-.title-name,
+.name-title,
 .text-proff {
   font-size: 16px;
   font-weight: 500;
@@ -129,7 +131,6 @@ ul {
 }
 
 .text-proff {
-  font-weight: 400;
   color: var(--main-text-color);
 }
 
@@ -142,12 +143,12 @@ ul {
   color: var(--white-text-color);
 }
 
-.address-link {
+.map-item .link {
   color: var(--white-text-color);
   font-style: normal;
 }
 
-.address-contact {
+.address-item .link {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
 }
@@ -176,6 +177,7 @@ ul {
   background-color: var(--background-box-lightgrey);
   line-height: 1.62;
   text-align: center;
+  cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
