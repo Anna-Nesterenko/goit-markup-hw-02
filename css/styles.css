@@ -3,12 +3,12 @@
   --second-text-color: #212121;
   --accent-text-color: #2196f3;
   --white-text-color: #ffffff;
-  --background-box-darkgrey: #2f303a;
-  --background-box-lightgrey: #f5f4fa;
+  --background-box-dark: #2f303a;
+  --background-box-light: #f5f4fa;
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", "sans-serif";
   color: var(--main-text-color);
   background-color: var(--white-text-color);
   font-size: 14px;
@@ -54,7 +54,7 @@ body {
 
 
 .logo {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", "sans-serif";
   color: var(--accent-text-color);
   font-weight: 700;
   font-size: 26px;
@@ -67,7 +67,7 @@ body {
 
 /* !Hero index*/
 .hero {
-  background-color: var(--background-box-darkgrey);
+  background-color: var(--background-box-dark);
 }
 
 .title {
@@ -109,11 +109,21 @@ body {
 
 /* !main index*/
 .section-team {
-  background-color: var(--background-box-lightgrey);
+  background-color: var(--background-box-light);
 }
-.title-invis {
-  color: transparent;
-}
+
+.visually-hidden {
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	margin: -1px;
+ }
 
 .qualities-title {
   color: var(--second-text-color);
@@ -121,6 +131,7 @@ body {
   line-height: 1.17;
   text-transform: uppercase;
 }
+
 .team-title, 
 .examples-title {
   font-size: 36px;
@@ -140,11 +151,13 @@ body {
 
 .text-proff {
   color: var(--main-text-color);
+  font-weight: 400;
+  
 }
 
 /* !footer */
 .footer {
-  background-color: var(--background-box-darkgrey);
+  background-color: var(--background-box-dark);
 }
 
 .logo-light {
@@ -182,7 +195,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   color: var(--second-text-color);
-  background-color: var(--background-box-lightgrey);
+  background-color: var(--background-box-light);
   line-height: 1.62;
   text-align: center;
   cursor: pointer;
